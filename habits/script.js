@@ -13,7 +13,7 @@ localStorage.setItem('NLWSetup@habits', JSON.stringify(nlwSetup.data))
 
 function add() {
     //Formatando a data atual e salvando na variável
-  const today = "27/01"/*new Date().toLocaleDateString('pt-br').slice(0,-5)*/
+  const today = new Date().toLocaleDateString('pt-br').slice(0,-5)
     //Chamando a função 'dayExist' e armazenando na variável
   const dayExists = nlwSetup.dayExists(today)
 
